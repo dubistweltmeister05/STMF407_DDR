@@ -1,0 +1,10 @@
+12:45:40 **** Incremental Build of configuration Debug for project UART_HELLO_WORLD ****
+make -j12 all 
+arm-none-eabi-size   UART_HELLO_WORLD.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8184	     20	   1636	   9840	   2670	UART_HELLO_WORLD.elf
+Finished building: default.size.stdout
+ 
+
+12:45:40 Build Finished. 0 errors, 0 warnings. (took 803ms)
+
