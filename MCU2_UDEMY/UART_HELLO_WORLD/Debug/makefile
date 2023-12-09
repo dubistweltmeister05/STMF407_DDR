@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -60,8 +60,8 @@ all: main-build
 main-build: UART_HELLO_WORLD.elf secondary-outputs
 
 # Tool invocations
-UART_HELLO_WORLD.elf UART_HELLO_WORLD.map: $(OBJS) $(USER_OBJS) C:\Users\wardawg\Desktop\Embedded\ Systems\MCU2_UDEMY\UART_HELLO_WORLD\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "UART_HELLO_WORLD.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\wardawg\Desktop\Embedded Systems\MCU2_UDEMY\UART_HELLO_WORLD\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_HELLO_WORLD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+UART_HELLO_WORLD.elf UART_HELLO_WORLD.map: $(OBJS) $(USER_OBJS) C:\Users\wardawg\Desktop\TEAM\ AUTOMATONS\STM_IMPLEMENTATION\MCU2_UDEMY\UART_HELLO_WORLD\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "UART_HELLO_WORLD.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\wardawg\Desktop\TEAM AUTOMATONS\STM_IMPLEMENTATION\MCU2_UDEMY\UART_HELLO_WORLD\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_HELLO_WORLD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -1,0 +1,31 @@
+01:10:56 **** Build of configuration Debug for project stm32f407_drivers ****
+make -j12 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/ENCODER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/wardawg/Desktop/TEAM AUTOMATONS/STM_IMPLEMENTATION/MCU1_UDEMY/stm32f407_drivers/Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/ENCODER.d" -MT"Src/ENCODER.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/ENCODER.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/wardawg/Desktop/TEAM AUTOMATONS/STM_IMPLEMENTATION/MCU1_UDEMY/stm32f407_drivers/Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/wardawg/Desktop/TEAM AUTOMATONS/STM_IMPLEMENTATION/MCU1_UDEMY/stm32f407_drivers/Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Drivers/src/stm32f407_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/wardawg/Desktop/TEAM AUTOMATONS/STM_IMPLEMENTATION/MCU1_UDEMY/stm32f407_drivers/Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/src/stm32f407_gpio_driver.d" -MT"Drivers/src/stm32f407_gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/src/stm32f407_gpio_driver.o"
+arm-none-eabi-gcc "../Drivers/src/stm32f407_i2c_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/wardawg/Desktop/TEAM AUTOMATONS/STM_IMPLEMENTATION/MCU1_UDEMY/stm32f407_drivers/Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/src/stm32f407_i2c_driver.d" -MT"Drivers/src/stm32f407_i2c_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/src/stm32f407_i2c_driver.o"
+arm-none-eabi-gcc "../Drivers/src/stm32f407_spi_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/wardawg/Desktop/TEAM AUTOMATONS/STM_IMPLEMENTATION/MCU1_UDEMY/stm32f407_drivers/Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/src/stm32f407_spi_driver.d" -MT"Drivers/src/stm32f407_spi_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/src/stm32f407_spi_driver.o"
+arm-none-eabi-gcc "../Drivers/src/stm32f407_usart_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/wardawg/Desktop/TEAM AUTOMATONS/STM_IMPLEMENTATION/MCU1_UDEMY/stm32f407_drivers/Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/src/stm32f407_usart_driver.d" -MT"Drivers/src/stm32f407_usart_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/src/stm32f407_usart_driver.o"
+../Src/ENCODER.c:16:6: warning: return type of 'main' is not 'int' [-Wmain]
+   16 | void main(){
+      |      ^~~~
+../Drivers/src/stm32f407_usart_driver.c: In function 'USART_SetBaudRate':
+../Drivers/src/stm32f407_usart_driver.c:420:25: warning: implicit declaration of function 'RCC_GetPCLK2Value' [-Wimplicit-function-declaration]
+  420 |                 PCLKx = RCC_GetPCLK2Value();
+      |                         ^~~~~~~~~~~~~~~~~
+../Drivers/src/stm32f407_usart_driver.c:422:25: warning: implicit declaration of function 'RCC_GetPCLK1Value' [-Wimplicit-function-declaration]
+  422 |                 PCLKx = RCC_GetPCLK1Value();
+      |                         ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "stm32f407_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\wardawg\Desktop\TEAM AUTOMATONS\STM_IMPLEMENTATION\MCU1_UDEMY\stm32f407_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f407_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f407_drivers.elf
+ 
+arm-none-eabi-size  stm32f407_drivers.elf 
+arm-none-eabi-objdump -h -S stm32f407_drivers.elf  > "stm32f407_drivers.list"
+   text	   data	    bss	    dec	    hex	filename
+    952	      8	   1568	   2528	    9e0	stm32f407_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f407_drivers.list
+ 
